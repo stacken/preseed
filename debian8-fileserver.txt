@@ -64,6 +64,7 @@ d-i partman-auto/method string raid
 d-i partman/early_command \
     string debconf-set partman-auto/disk "$(get-small-disks)"; \
            debconf-set grub-installer/bootdev "$(get-small-disks)"; \
+           debconf-set grub-installer/choose_bootdev "$(get-small-disks)"; \
            debconf-set partman-auto-raid/recipe "1 2 0 ext4 /boot $(get-raid-n 1)1#$(get-raid-n 2)1 . 1 2 0 swap - $(get-raid-n 1)2#$(get-raid-n 2)2 . 1 2 0 ext4 / $(get-raid-n 1)3#$(get-raid-n 2)3 ."
 
 
