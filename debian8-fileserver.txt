@@ -41,13 +41,13 @@ d-i partman-md/confirm boolean true
 d-i partman-md/device_remove_md boolean true
 
 # Use GPT
-d-i partman-basicfilesystems/choose_label string gpt
-d-i partman-basicfilesystems/default_label string gpt
-d-i partman-partitioning/choose_label string gpt
-d-i partman-partitioning/default_label string gpt
-d-i partman/choose_label string gpt
-d-i partman/default_label string gpt
-d-i partman-partitioning/choose_label select gpt
+#d-i partman-basicfilesystems/choose_label string gpt
+#d-i partman-basicfilesystems/default_label string gpt
+#d-i partman-partitioning/choose_label string gpt
+#d-i partman-partitioning/default_label string gpt
+#d-i partman/choose_label string gpt
+#d-i partman/default_label string gpt
+#d-i partman-partitioning/choose_label select gpt
 
 # Set up disk layout
 d-i partman-auto/expert_recipe string \
