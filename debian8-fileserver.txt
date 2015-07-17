@@ -71,7 +71,7 @@ d-i partman/early_command \
 # Misc tasks
 ##
 
-tasksel tasksel/first ssh-server
+tasksel tasksel/first multiselect ssh-server
 popularity-contest popularity-contest/participate boolean false
 
 d-i pkgsel/upgrade select safe-upgrade
